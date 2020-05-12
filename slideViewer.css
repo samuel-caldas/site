@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*preload classes*/
+.svw {
+	width: 900px;
+	height: 350px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+.svw ul {position: relative; left: -999em;}
+
+/*core classes*/
+.stripViewer {
+	position: relative;
+	overflow: hidden;
+	width: 900px;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 1px;
+	margin-left: 0;
+	height: 350px;
+}
+.stripViewer ul { /* this is your UL of images */
+margin: 0;
+padding: 0;
+position: relative;
+left: 0;
+top: 0;
+list-style-type: none;
+}
+.stripViewer ul li { 
+float:left;
+}
+.stripTransmitter {
+	overflow: auto;
+	top: -40px;
+	position: relative;
+	display: block;
+	left: 15px;
+	
+}
+.stripTransmitter ul {
+	padding: 0;
+	position: relative;
+	list-style-type: none;
+	display: block;
+	margin: 0px;
+}
+.stripTransmitter ul li{
+	float: left;
+	display: block;
+}
+.stripTransmitter a{
+	width: 25px;
+	height: 25px;
+	display: block;
+	background-color: rgba(91,39,28,0.2);
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 25px;
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+	display: block;
+	font-family: Verdana, Arial;
+	font-size: 10px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 2px rgba(91,39,28,0.3);
+	-webkit-box-shadow: 0px 0px 2px rgba(91,39,28,0.3);
+	;
+	box-shadow: 0px 0px 2px rgba(91,39,28,0.3);
+	margin: 3px;
+}
+.stripTransmitter a:hover, a.current{
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(91,39,28,0.5);
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+/*tooltips formatting*/
+.tooltip{
+	padding: 0.5em;
+/*	background: rgba(255, 255, 255, 0.2); */
+	color: #000;
+	border: 5px solid #dedede;
+}
